@@ -1,0 +1,7 @@
+{
+  "name": "the-cats-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
