@@ -1,0 +1,99 @@
+
+<ion-content [fullscreen]="true" >
+  <div class="content">
+    <div class="image">
+      <img [src]="cat.url" alt="cat">
+    </div>
+    <ion-card class="card-details">
+      <ion-card-header>
+        <ion-card-title>{{cat.name}}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>{{cat.description}}</p>
+
+        <br>
+
+        <div class="card-list">
+
+          <ion-list>
+            <ion-item>
+              <ion-label>adaptability</ion-label>
+              <ion-badge color="primary">{{cat.adaptability}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>affection_level</ion-label>
+              <ion-badge color="primary">{{cat.affection_level}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>child_friendly</ion-label>
+              <ion-badge color="primary">{{cat.child_friendly}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>dog_friendly</ion-label>
+              <ion-badge color="primary">{{cat.dog_friendly}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>energy_level</ion-label>
+              <ion-badge color="primary">{{cat.energy_level}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>grooming</ion-label>
+              <ion-badge color="primary">{{cat.grooming}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>health_issues</ion-label>
+              <ion-badge color="primary">{{cat.health_issues}}</ion-badge>
+            </ion-item>
+
+          </ion-list>
+
+          <ion-list>
+            <ion-item>
+              <ion-label>intelligence</ion-label>
+              <ion-badge color="primary">{{cat.intelligence}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>shedding_level</ion-label>
+              <ion-badge color="primary">{{cat.shedding_level}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>social_needs</ion-label>
+              <ion-badge color="primary">{{cat.social_needs}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>stranger_friendly</ion-label>
+              <ion-badge color="primary">{{cat.stranger_friendly}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>vocalisation</ion-label>
+              <ion-badge color="primary">{{cat.vocalisation}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>experimental</ion-label>
+              <ion-badge color="primary">{{cat.experimental}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>hairless</ion-label>
+              <ion-badge color="primary">{{cat.hairless}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>natural</ion-label>
+              <ion-badge color="primary">{{cat.natural}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>rare</ion-label>
+              <ion-badge color="primary">{{cat.rare}}</ion-badge>
+            </ion-item>
+            <ion-item>
+              <ion-label>rex</ion-label>
+              <ion-badge color="primary">{{cat.rex}}</ion-badge>
+            </ion-item>
+          </ion-list>
+        </div>
+
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

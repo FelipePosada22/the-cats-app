@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>List Cats</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">List Cats</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-card *ngFor="let item of cats" class="card-cats" (click)="goToDetail(item.id)">
+    <img class="card-cats__image" alt="cat" [src]="item.url" />
+    <div class="card-content">
+      <ion-card-header>
+        <ion-card-title class="card-cats__title">{{item.name}}</ion-card-title>
+        <ion-card-subtitle class="card-cats__subtitle">{{item.temperament}}</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <h3 class="card-cats__origin">{{item.origin}}</h3>
+      </ion-card-content>
+    </div>
+
+    <div class="card-cats__details">
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </div>
+  </ion-card>
+
+</ion-content>

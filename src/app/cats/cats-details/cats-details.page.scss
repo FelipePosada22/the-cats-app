@@ -1,0 +1,34 @@
+.card-details{
+  display: block;
+  position: absolute;
+  top: 40%;
+  border-top-right-radius: 12%;
+  z-index: 100;
+  width: 100%;
+  margin: 5px;
+  background: #0085FE;
+  color: white;
+}
+
+.image{
+  flex: 3;
+}
+
+.card-list{
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+
+img{
+  width: 100%;
+  height: 50%;
+}
