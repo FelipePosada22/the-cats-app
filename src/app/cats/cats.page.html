@@ -1,11 +1,58 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>List Cats</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <div
+    class="container animate__animated animate__bounce animate__delay-1s animate__duration-2s"
+  >
+    <div class="container__header">
+      <div class="container-header__alert">
+        <ion-icon name="menu"></ion-icon>
+        <ion-icon name="notifications-off"></ion-icon>
+      </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+      <div class="container-header__title">
+        <h1 class="title">List Cats</h1>
+        <h2>Developer by Felipe_Posada</h2>
+      </div>
+
+      <div class="container-body__input">
+        <ion-searchbar
+          class="custom"
+          placeholder="Search cat by name"
+        ></ion-searchbar>
+      </div>
+    </div>
+
+    <div class="container__body">
+      <div class="container-body__carts">
+        <ion-card
+          *ngFor="let item of cats"
+          class="card-cats"
+          (click)="goToDetail(item.id)"
+        >
+          <img class="card-cats__image" alt="cat" [src]="item.url" />
+          <div class="card-content">
+            <ion-card-header>
+              <ion-card-title class="card-cats__title"
+                >{{item.name}}</ion-card-title
+              >
+              <ion-card-subtitle class="card-cats__subtitle"
+                >{{item.temperament}}</ion-card-subtitle
+              >
+            </ion-card-header>
+
+            <ion-card-content>
+              <h3 class="card-cats__origin">{{item.origin}}</h3>
+            </ion-card-content>
+          </div>
+
+          <div class="card-cats__details">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+        </ion-card>
+      </div>
+    </div>
+  </div>
+
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">List Cats</ion-title>
     </ion-toolbar>
@@ -30,4 +77,5 @@
     </div>
   </ion-card>
 
+-->
 </ion-content>

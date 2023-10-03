@@ -1,13 +1,19 @@
+@import 'animate.css';
+
 .card-details{
   display: block;
+  flex: 5;
   position: absolute;
-  top: 40%;
+  top: 30%;
   border-top-right-radius: 12%;
   z-index: 100;
   width: 100%;
+  height: 80%;
   margin: 5px;
   background: #0085FE;
   color: white;
+  margin-left: 0px;
+  overflow: auto;
 }
 
 .image{
@@ -16,8 +22,33 @@
 
 .card-list{
   display: flex;
-  justify-content: space-between;
-  gap: 5px;
+  gap: 15px;
+  width: 400px;
+  &__box{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100px;
+    height: 100px;
+    background: white;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  &-box{
+    &__title{
+      font-size: 13px;
+      color: gray;
+    }
+    &__record{
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+    }
+  }
 }
 
 .content{
@@ -31,4 +62,83 @@
 img{
   width: 100%;
   height: 50%;
+}
+
+
+.back-to-route{
+  height: 50px;
+    width: 50px;
+    position: absolute;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #0085FE;
+    font-size: 28px;
+  --box-shadow:  0px 0px 3px 0px rgba(120,120,120,1);
+
+}
+
+ion-card-title, ion-title, .title{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+
+
+.container-habilities{
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.container-button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  &__love{
+    height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 50%;
+    color: red;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__adopt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+ion-button {
+  --background: #ffffff;
+  --background-hover: #ffffff;
+  --background-activated: #ffffff;
+  --background-focused: #ffffff;
+  --color: #0085FE;
+  --border-radius: 50px;
+  --border-color: #fff;
+  --border-style: solid;
+  --border-width: 1px;
+  --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+  --ripple-color: white;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  width: 90%;
 }

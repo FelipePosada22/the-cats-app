@@ -13,8 +13,8 @@ import { CatsDetailsPage } from './cats-details.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    CatsDetailsPageRoutingModule
+    CatsDetailsPageRoutingModule,
   ],
-  declarations: [CatsDetailsPage]
+  declarations: [CatsDetailsPage],
 })
 export class CatsDetailsPageModule {}
